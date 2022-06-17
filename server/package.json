@@ -1,0 +1,39 @@
+{
+  "name": "xtrude-server",
+  "version": "1.0.0",
+  "description": "xtrude server",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamzyMerad/xtrude.git"
+  },
+  "keywords": [
+    "finalwork",
+    "socialmedia"
+  ],
+  "author": "Ramzy Merad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RamzyMerad/xtrude/issues"
+  },
+  "homepage": "https://github.com/RamzyMerad/xtrude#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^2.0.0",
+    "pg": "^8.7.3",
+    "socket.io": "^4.5.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "jest": "^28.0.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}

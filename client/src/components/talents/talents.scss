@@ -1,0 +1,17 @@
+.talentscontainer{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    width:150px;
+   height:300px;
+ 
+
+      label{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      
+      }
+}

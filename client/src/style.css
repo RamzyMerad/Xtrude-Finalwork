@@ -1,0 +1,11 @@
+#canvas-container{
+  width: 900px;
+  height: 900px;
+}
+
+.content{
+  background-color: #F5FCFF;
+  margin: 50px;
+  width: auto;
+  height: auto;
+}
