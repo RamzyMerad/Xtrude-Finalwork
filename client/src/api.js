@@ -3,6 +3,10 @@ async function getPosts() {
   const response = await fetch(`${url}/posts`);
  return await response.json();
 }
+async function getComments() {
+  const response = await fetch(`${url}/comments`);
+ return await response.json();
+}
 async function login(user) {
   const response = await fetch(`${url}/auth`,{
     method: "POST",
@@ -34,6 +38,17 @@ async function createPost(post) {
   });
  return await response.json();
 }
+async function createComment(comment) {
+  console.log(comment)
+  const response = await fetch(`${url}/comments`,{
+    method: "POST",
+    headers: {
+      "content-type": "application/json"
+    },
+    body : JSON.stringify(comment)
+  });
+ return await response.json();
+}
 async function getJwt(token) {
   const response = await fetch(`${url}/users/decodeToken?token=${token}`);
  return await response.json();
@@ -49,6 +64,8 @@ async function getUsers() {
 
 export{
   getPosts,
+  getComments,
+  createComment,
   login,
   register,
   createPost,

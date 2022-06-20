@@ -19,7 +19,6 @@ p{
   display: flex;
   height: 100vh;
   background-color: #F5FCFF;
-  
 }
 
 .login-wrapper {
@@ -46,7 +45,6 @@ p{
 }
 
 .LoginTitle {
-  padding-left: ;
 align-items: center;
 text-align: center;
 z-index: 1;

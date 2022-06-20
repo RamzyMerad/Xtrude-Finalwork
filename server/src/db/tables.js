@@ -30,6 +30,19 @@ const createTables = async () => {
       });
     }
   });
+
+
+  await pg.schema.hasTable("comments").then(async (exist)=>{
+    if(!exist){
+     await pg.schema.createTable("comments", function (table) {
+        table.increments(); // integer id
+        table.string('comment'); // Comment
+        table.integer('post_id'); //Post that we comment
+      }).then(() => {
+  
+      });
+    }
+  });
 }
 createTables();
 module.exports = pg;

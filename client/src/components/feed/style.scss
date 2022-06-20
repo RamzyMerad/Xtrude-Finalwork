@@ -7,19 +7,60 @@
   .profil{
     position: fixed;
     left: 50px;
-    width: calc(20% - 50px);
-    height: 500px;
+    width: calc(23% - 50px);
+    height: 480px;
     background-color: white;
     box-shadow: 0 0 30px rgba($color: #000000, $alpha: 0.20);
     border-radius: 12px;
+    text-align: center;
+    overflow: hidden;
+    .backgroundImage{
+      background-image: url('./background.png');
+      background-size: cover;
+      background-position: center;
+      .profileImage{
+        margin-top: 45px;
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        transform: translateY(40px);
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .profilInfo{
+      margin-top: 45px;
+      .id_name{
+        font-weight: lighter;
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+      .name{
+        margin-bottom: 25px;
+      }
+      .bio{
+        font-size: 14px;
+        margin-bottom: 25px;
+      }
+      .follow{
+        margin-bottom: 10px;
+      }
+      .myProfile{
+        width: 80%;
+        background-color: #0A9BDB;
+      }
+    }
   }
   .posts{
-    width: 60%;
+    width: 54%;
     .post-row{
       display: flex;
       align-items: center;
       justify-content: space-between;
-      
+
       .activity-icons div{
         display: inline-flex;
         margin-right: 30px;
@@ -28,10 +69,10 @@
     .user-profile{
       display: flex;
       align-items: center;
-    
+
       img{
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
         object-fit: cover;
         border-radius: 50%;
         margin-right: 10px;
@@ -53,8 +94,28 @@
       margin: 20px 0;
       padding: 20px;
       background-color: white;
-    box-shadow: 0 0 30px rgba($color: #000000, $alpha: 0.20);
-    border-radius: 12px;
+      box-shadow: 0 0 30px rgba($color: #000000, $alpha: 0.20);
+      border-radius: 12px;
+    }
+    .post{
+      padding: 20px 50px;
+      .buttonInteraction{
+        position: relative;
+        .numberOfIntercation{
+          position: absolute;
+          font-size: 10px;
+          background-color: #0A9BDB;
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          right: -5px;
+          top: -4px;
+        }
+      }
     }
     .publications{
       flex-direction: column-reverse;
@@ -62,7 +123,6 @@
     }
     .postInput{
       margin-top: 0;
-      padding: 50px;
       form{
       display: flex;
       width: 100%;
@@ -83,20 +143,30 @@
       }
       }
       .writeBox{
+        width: 93%;
+        margin: 0 auto 10px;
         display: flex;
+        .inputFeed{
+          height: 60px;
+          border-radius: 0;
+          border-bottom: solid 0px #0A9BDB;
+          &:hover{
+            border-bottom: solid 1px #0A9BDB;
+          }
+        }
       }
       .add-buttons{
         display: flex;
-        justify-content: center;
-        margin-top: 10px;
-      }
-      .add-buttons a{
-        margin-right: 30px;
+        width: 75%;
+        min-width: 400px;
+        margin: 0 auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
       }
       .add-buttons button{
-        height: 30px;
-        width: 150px;
-        border-radius: 12px;
+        height: 44px;
+        width: 200px;
+        border-radius: 22px;
         border-color: #0A9BDB;
         background-color: white;
         box-shadow: 0 0 30px rgba($color: #000000, $alpha: 0.20);
@@ -107,22 +177,29 @@
   .trends{
     right: 50px;
     position: fixed;
-    width: calc(20% - 50px);
-    height: 250px;
+    width: calc(23% - 50px);
+    height: 300px;
     background-color: white;
     box-shadow: 0 0 30px rgba($color: #000000, $alpha: 0.20);
     border-radius: 12px;
+    padding: 25px 60px;
     h2{
-      text-align: center;
       font-weight: bold;
+      margin-bottom: 20px;
     }
     .trendsTags{
       width: 100%;
       height: 70%;
-      padding-left: 60px;
+    }
+    .tagComment{
+      font-size: 12px;
+      color: #606060;
+    }
+    a{
+      color: #0A9BDB;
+      text-decoration: underline;
+      font-weight: 600;
     }
   }
 
 }
-
-
