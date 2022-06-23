@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import{React ,useEffect, useState } from 'react'
 import { useCookies } from 'react-cookie';
 import Image from './fd3bc294ad02ef959f18b1593ccb6ec4.webp';
 import "./profile.scss";

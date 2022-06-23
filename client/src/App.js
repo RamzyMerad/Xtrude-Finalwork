@@ -7,6 +7,7 @@ import Register from './components/register';
 import Profile from './components/profile';
 import Talents from "./components/talents/talents";
 import Post from './components/post/post'
+import Jobs from "./components/Jobs/jobs";
 import React, { useState } from 'react';
 import { useCookies } from "react-cookie";
 import {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/talents" element={<Talents/>}/>
         <Route path="/post" element={<Post/>}/>
+        <Route path="/jobs" element={<Jobs/>}/>
     </Routes>
     </div>
   </BrowserRouter>
